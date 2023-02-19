@@ -1,1 +1,2 @@
-"# p1-brms-project" 
+"# p1-brms-capstone" 
+This is my P1 capstone project called Bus Reservation Management System.This is a Java web project with Maven where I have used Java, mysql database, JDBC, Servlet, JSP with HTML,CSS and JavaScript.Used Tomcat-9 server.This is a Bus Registration module which is only accessible to admin.There are 4 usecases in this project for the admin. The admin can add buses to be available for booking, list the added buses, delete a bus and also update the details of a bus. It is connected with the database using JDBC.All the controller and view logic are coded in servlets and jsp.
