@@ -32,6 +32,8 @@ public class EditBus extends HttpServlet {
 			ps1.setString(1,bid);
 			ResultSet rs= ps1.executeQuery();
 			rs.next();
+			out.println("<div class='mx-auto' style='width:600px; margin:10px;'>");
+			out.println("<h2 class='text-dark'>Updating Bus Details</h2>");
 			out.println("<div style='margin:auto; width:500; margin-top:10px;padding-top:10px;'>");
 			out.println("<form action='edit?id="+bid+"' method='GET'>");
 

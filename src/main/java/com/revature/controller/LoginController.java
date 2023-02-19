@@ -16,13 +16,10 @@ import javax.servlet.http.HttpSession;
 public class LoginController extends HttpServlet{
 	
 	private static final long serialVersionUID = 1L;
-	
 	LoginDAO loginDAO = null;
-	
 	public LoginController() {
 		loginDAO = new LoginDAOImpl();
 	}
-	
 	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		HttpSession session = request.getSession();
@@ -35,7 +32,6 @@ public class LoginController extends HttpServlet{
 		if(result.equals("true")){
 			session.setAttribute("email",login.getEmail());
 			response.sendRedirect("BusController?action=LIST");
-			//response.sendRedirect("/BusController?action=LIST");
 		}
 		 
 		if(result.equals("false")){

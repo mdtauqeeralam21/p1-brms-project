@@ -39,10 +39,7 @@ public class BusController extends HttpServlet {
 				listBus(request, response);
 				break;
 				
-			case "EDIT":
-				getSingleBus(request, response);
-				break;
-				
+		
 			case "DELETE":
 				deleteBus(request, response);
 				break;
@@ -66,18 +63,7 @@ public class BusController extends HttpServlet {
 		listBus(request, response);
 	}
 
-	private void getSingleBus(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-		
-		String id = request.getParameter("id");
-		
-		Bus thebus = busDAO.get(id);
-		
-		request.setAttribute("bus", thebus);
-		
-		dispatcher = request.getRequestDispatcher("/EditBusServlet");
-		
-		dispatcher.forward(request, response);
-	}
+
 
 	private void listBus(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
@@ -119,3 +105,28 @@ public class BusController extends HttpServlet {
 	}
 
 }
+
+
+
+
+
+
+
+
+//case "EDIT":
+//getSingleBus(request, response);
+//break;
+
+
+//private void getSingleBus(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+//
+//String id = request.getParameter("id");
+//
+//Bus thebus = busDAO.get(id);
+//
+//request.setAttribute("bus", thebus);
+//
+//dispatcher = request.getRequestDispatcher("/EditBusServlet");
+//
+//dispatcher.forward(request, response);
+//}
