@@ -26,7 +26,9 @@
         	}
         }
         %>
-    
+    	<div class="mx-auto" style="width: 600px;margin:10px;">
+    	<h2 class="text-dark">Welcome back Admin,</h2>
+    	
         <div class="mx-auto" style="width: 600px;margin:100px;">
         	<form action="loginprocess" method="post"> 
        		<div class="card">
@@ -47,6 +49,7 @@
 	        	</div>
        		</div>
         	</form>
+        </div>
         </div>
     </body>
 </html>
