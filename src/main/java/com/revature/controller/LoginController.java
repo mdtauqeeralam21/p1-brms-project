@@ -1,6 +1,7 @@
 package com.revature.controller;
 
 import java.io.IOException;
+import java.io.PrintWriter;
 
 import com.revature.dao.LoginDAO;
 import com.revature.dao.LoginDAOImpl;
